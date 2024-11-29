@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>희망 플랫폼 설정</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e8fc;
+        }
+        .container {
+            width: 375px;
+            height: 812px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background: linear-gradient(to bottom, #e0e8fc, #fff);
+            position: relative;
+            padding: 20px;
+        }
+        /* 상단 상태바 */
+        .status-bar {
+            width: 100%;
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 10px;
+            font-size: 0.8em;
+            color: #333;
+        }
+        .status-bar .left {
+            display: flex;
+            align-items: center;
+        }
+        .status-bar .right {
+            display: flex;
+            align-items: center;
+        }
+        .status-bar img {
+            width: 16px;
+            height: 16px;
+            margin-left: 5px;
+        }
+
+        /* 뒤로가기 버튼 */
+        .back-button {
+            position: absolute;
+            top: 40px;
+            left: 20px;
+            cursor: pointer;
+        }
+        .back-button img {
+            <img src="c:\Users\Administrator\Desktop\backbutton.png">
+            width: 24px;
+            height: 24px;
+        }
+
+        /* 상단 타이틀 박스 */
+        .title-box {
+            margin: 60px auto 10px;
+            text-align: center;
+            background-color: #6f5cf1;
+            color: white;
+            padding: 10px;
+            border-radius: 25px;
+            width: 250px;
+            font-size: 1.2em;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 0.9em;
+            margin: 20px 0; /* 텍스트 위치 아래로 조정 */
+        }
+
+        /* 플랫폼 리스트 박스 */
+        .platform-list-box {
+            margin-top: 40px; /* 박스 위치 아래로 조정 */
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .platform-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .platform-list div {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .platform-list img {
+            width: 80px;
+        }
+        .platform-list input {
+            margin-right: 10px;
+            transform: scale(1.5);
+        }
+
+        .notification-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #6f5cf1;
+            color: white;
+            font-size: 1.2em;
+            border-radius: 25px;
+            padding: 15px;
+            margin-top: 90px; /* 알림 설정 위치 아래로 조정 */
+            cursor: pointer;
+        }
+        .notification-btn img {
+            width: 24px;
+            height: 24px;
+            margin-left: 10px;
+        }
+
+        /* 하단 선 및 아이콘 수정 */
+        .footer {
+            position: absolute;
+            bottom: 30px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-line {
+            width: 110%; /* 선을 꽉 채움 */
+            height: 1px;
+            background-color: #ccc;
+            margin-bottom: 10px;
+        }
+        .footer-icons {
+            display: flex;
+            justify-content: space-around;
+            width: 100%; /* 아이콘 그룹의 너비를 조정 */
+        }
+        .footer-icons img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 상단 상태바 -->
+    <div class="status-bar">
+        <div class="left">
+            <span>11:52</span>
+        </div>
+        <div class="right">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/WiFi_icon.svg/1024px-WiFi_icon.svg.png" alt="WiFi">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Battery_full_Icon.svg/1024px-Battery_full_Icon.svg.png" alt="Battery">
+        </div>
+    </div>
+
+    <!-- 뒤로가기 버튼 -->
+    <div class="back-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Back_Arrow.svg/1024px-Back_Arrow.svg.png" alt="Back">
+    </div>
+
+    <!-- 타이틀 박스 -->
+    <div class="title-box">
+        희망 플랫폼 설정
+    </div>
+
+    <div class="description">
+        희망 플랫폼은 1개만 지정할 수 있습니다
+    </div>
+
+    <!-- 플랫폼 리스트 박스 -->
+    <div class="platform-list-box">
+        <div class="platform-list">
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/11st_logo.svg/512px-11st_logo.svg.png" alt="11번가">
+                <input type="checkbox">
+            </div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/GMARKET_logo_2014.svg/512px-GMARKET_logo_2014.svg.png" alt="Gmarket">
+                <input type="checkbox">
+            </div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Coupang_logo.png" alt="Coupang">
+                <input type="checkbox">
+            </div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Marketkurly_logo.svg/512px-Marketkurly_logo.svg.png" alt="Kurly">
+                <input type="checkbox">
+            </div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Auction_logo.png" alt="Auction">
+                <input type="checkbox">
+            </div>
+        </div>
+    </div>
+
+    <div class="notification-btn">
+        알림 설정
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Bell_icon.svg/1024px-Bell_icon.svg.png" alt="Bell Icon">
+    </div>
+
+    <!-- 하단 아이콘과 선 -->
+    <div class="footer">
+        <div class="footer-line"></div> <!-- 선 추가 -->
+        <div class="footer-icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Home_icon.svg/1024px-Home_icon.svg.png" alt="Home">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Heart_icon.svg/1024px-Heart_icon.svg.png" alt="Heart">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/User_icon_2.svg/1024px-User_icon_2.svg.png" alt="User">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Settings_icon.svg/1024px-Settings_icon.svg.png" alt="Settings">
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+name: my_flutter_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  fluttertoast: ^8.0.9
+  http: ^1.2.2  # HTTP 패키지 추가
+  url_launcher: ^6.0.9
+  fl_chart: ^0.69.0
+  charts_flutter: ^0.12.0
+  syncfusion_flutter_charts: ^21.2.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logos/11st.png
+    - assets/logos/gmarket.png
+    - assets/logos/coupang.png
+    - assets/logos/kurly.png
+    - assets/logos/auction.png
+    - assets/logos/11st2.png
+    - assets/logos/gmarket2.png
+    - assets/logos/coupang2.png
+    - assets/logos/kurly2.png
+    - assets/logos/auction2.png
+
+
